@@ -5,7 +5,7 @@ import neat
 import pickle
 import os
 
-env = retro.make('DonkeyKongCountry-Snes', '1Player.CongoJungle.RopeyRampage.Level2')
+env = retro.make('DonkeyKongCountry-Snes', '1Player.CongoJungle.JungleHijinks.Level1')
 
 imgarray = []
 
@@ -45,7 +45,30 @@ def main(genomes, config):
 
             nnOutput = net.activate(imgarray)
 
-            print(nnOutput)
+            ob, rew, done, info = env.step(nnOutput)
+            
+            #print(env.get_action_meaning(nnOutput))
+            #print(info)
+            imgarray.clear()
+            
+            xpos = info['x']
+            #print(xpos)
+
+            if xpos > xpos_max:
+                fitness_current += 1
+                xpos_max = xpos
+
+            if fitness_current > current_max_fitness:
+                current_max_fitness = fitness_current
+                counter = 0
+            else:
+                counter += 1
+
+            if done or counter == 250:
+                done = True
+                print(genome_id, fitness_current)
+
+            genome.fitness = fitness_current
 
 
 config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction, neat.DefaultSpeciesSet, neat.DefaultStagnation, os.path.join(os.path.dirname(__file__), "config_feedforward.txt"))
