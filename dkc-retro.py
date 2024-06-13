@@ -5,7 +5,7 @@ import neat
 import pickle
 import os
 
-env = retro.make('DonkeyKongCountry-Snes', '1Player.CongoJungle.JungleHijinks.Level1')
+env = retro.make('DonkeyKongCountry-Snes', '1Player.CongoJungle.RopeyRampage.Level2')
 
 imgarray = []
 
