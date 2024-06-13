@@ -3,6 +3,8 @@ A Python program to play the first level of Donkey Kong Country (SNES, 1996), Ju
 
 ### Prerequisites
 
+pyenv must be installed, as well as Python version 3.8 (through pyenv). Details for how this may be done can be seen [here](https://github.com/pyenv/pyenv).
+
 Prerequisites are viewable in `requirements.txt`.
 
 ### Installation
