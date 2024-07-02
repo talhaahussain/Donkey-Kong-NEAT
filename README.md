@@ -19,7 +19,7 @@ cd dkc-neat/
 Install prerequisites with:
 
 ```shell
-pip install -r requirements.txt
+bash install.sh
 ```
 
 ### Configuration
