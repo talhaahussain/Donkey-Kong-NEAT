@@ -26,6 +26,12 @@ Install prerequisites with:
 bash install.sh
 ```
 
+or alternatively:
+
+```bash
+pip install -r requirements.txt
+```
+
 ### Configuration
 
 The NEAT algorithm can be configured using `config_feedforward.txt`. More information on how to do this can be seen [here](https://neat-python.readthedocs.io/en/latest/index.html), at NEAT-Python’s documentation.
