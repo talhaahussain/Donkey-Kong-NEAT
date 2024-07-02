@@ -41,3 +41,7 @@ python dkc-retro.py
 ### See also
 
 [Flappy-Bird-NEAT](https://github.com/talhaahussain/Flappy-Bird-NEAT)
+
+### Footnote
+
+This project does not infringe on any intellectual property. Always obtain ROMs from an authentic and legal source - piracy is a crime.
