@@ -3,6 +3,10 @@ A Python program to play the first or second level of Donkey Kong Country (SNES,
 
 ### Prerequisites
 
+Requires a valid ROM file (`.sfc`) of Donkey Kong Country, USA version, Rev 2 (SHA-1 sum: cd606e77ab2034438e06891cd2d067dad69b4d1a). 
+
+**Please check that you have this specific ROM version, as other versions of Donkey Kong may not work.**
+
 pyenv must be installed, as well as Python version 3.8 (through pyenv). Details for how this may be done can be seen [here](https://github.com/pyenv/pyenv).
 
 Prerequisites are viewable in `requirements.txt`.
