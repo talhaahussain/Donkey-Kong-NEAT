@@ -23,7 +23,7 @@ cd dkc-neat/
 Install prerequisites with:
 
 ```shell
-bash install.sh
+. install.sh
 ```
 
 or alternatively:
